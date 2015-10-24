@@ -1,0 +1,24 @@
+[
+	{
+		"name":"双心",
+		"id":"magicwand000"
+	},
+	{
+		"name":"球球",
+		"id":"magicwand001"
+	},
+	{
+		"name":"巧克力心",
+		"id":"magicwand002"
+	},
+	{
+		"name":"星之卡比",
+		"id":"magicwand003",
+		"multi":"3"
+	},
+	{
+		"name":"彩星",
+		"id":"magicwand004",
+		"multi":"7"
+	}
+]

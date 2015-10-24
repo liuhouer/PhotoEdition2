@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources> 
+	<style name="ViewFlipper">
+    	<item name="android:persistentDrawingCache">animation</item>
+    	<item name="android:layout_margin">0dp</item>
+    	<item name="android:padding">0dp</item>
+	</style>
+	<style name="TopBarBtn">
+		<item name="android:textColor">#FFFFFF</item> 
+		<item name="android:shadowColor">#000000</item> 
+		<item name="android:background">@drawable/topbarbtn</item>
+		<item name="android:layout_margin">0dp</item>
+		<item name="android:textSize">15dp</item>
+		<item name="android:layout_gravity">center</item>	
+	</style>
+	<style name="TopBar">
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:orientation">horizontal</item>
+		<item name="android:background">@drawable/topbar</item>	
+	</style>
+	<style name="BottomBarBtn1">
+		<item name="android:shadowColor">#000000</item> 
+		<item name="android:background">@drawable/bottombarbtn1</item>
+		<item name="android:layout_margin">0dp</item>
+		<item name="android:layout_gravity">center</item>
+		<item name="android:layout_weight">1</item>
+	</style>
+	<style name="BottomBarBtn2">
+		<item name="android:shadowColor">#000000</item> 
+		<item name="android:background">@drawable/bottombarbtn2</item>
+		<item name="android:layout_margin">0dp</item>
+		<item name="android:layout_gravity">center</item>
+		<item name="android:layout_weight">1</item>
+	</style>
+	<style name="BottomBar">
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:orientation">horizontal</item>
+		<item name="android:background">@drawable/bottombar</item>	
+	</style>
+	<style name="GridView4">
+		<item name="android:numColumns">auto_fit</item>
+		<item name="android:columnWidth">70dp</item>
+		<item name="android:verticalSpacing">10dp</item>
+		<item name="android:horizontalSpacing">10dp</item>
+		<item name="android:stretchMode">columnWidth</item>
+		<item name="android:persistentDrawingCache">scrolling</item>
+	</style>
+	<style name="TabBtn"> 
+		<item name="android:textColor">#FFFFFF</item> 
+		<item name="android:shadowColor">#000000</item> 
+		<item name="android:background">@drawable/tabbtn</item>
+		<item name="android:layout_marginRight">1dp</item>
+		<item name="android:textSize">15dp</item>	
+	</style> 
+	<style name="TabFlipper">
+		<item name="android:persistentDrawingCache">animation</item>
+    	<item name="android:inAnimation">@anim/push_up_in</item>
+    	<item name="android:outAnimation">@anim/push_down_out</item>
+    	<item name="android:layout_marginTop">-1dp</item>
+    	<item name="android:background">@drawable/tabbg</item>
+	</style>
+	<style name="GridView5">
+		<item name="android:numColumns">auto_fit</item>
+		<item name="android:columnWidth">50dp</item>
+		<item name="android:verticalSpacing">7dp</item>
+		<item name="android:horizontalSpacing">7dp</item>
+		<item name="android:stretchMode">columnWidth</item>
+		<item name="android:persistentDrawingCache">scrolling</item>
+	</style>
+	<style name="ControlBar">
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:orientation">horizontal</item>
+		<item name="android:background">@drawable/controlbar</item>
+	</style>
+	<style name="ControlBarBtn">
+		<item name="android:shadowColor">#000000</item>
+		<item name="android:background">@drawable/controlbarbtn</item>
+		<item name="android:layout_margin">0dp</item>
+		<item name="android:layout_gravity">center</item>
+		<item name="android:scaleType">fitCenter</item>
+	</style>
+</resources>

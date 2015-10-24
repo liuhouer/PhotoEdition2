@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/viewflipper" 
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    style="@style/ViewFlipper">
+    
+    <!-- The first view -->
+	<LinearLayout android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent">
+		<RelativeLayout android:layout_width="fill_parent" 
+	    	android:layout_height="40dp"
+	    	style="@style/TopBar">
+	    	<Button android:id="@+id/back1btn"
+	    		android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+		    	android:text="返回"
+		    	android:layout_alignParentLeft="true"
+		    	style="@style/TopBarBtn">
+	    	</Button>
+	    	<Button android:id="@+id/next1btn"
+	    		android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+		    	android:text="下一步"
+		    	android:layout_alignParentRight="true"
+		    	style="@style/TopBarBtn">
+	    	</Button>
+	    </RelativeLayout>
+	    <FrameLayout android:layout_height="wrap_content" 
+	    	android:layout_width="fill_parent"
+	    	android:layout_weight="1"
+	    	android:background="@drawable/bg"
+	    	android:layout_gravity="center">
+	    	<digu.PhotoEdition.PhotoEditionView1 android:id="@+id/pev1"
+	    		android:layout_width="wrap_content" 
+	    		android:layout_height="wrap_content"
+	    		android:layout_gravity="center">
+	    	</digu.PhotoEdition.PhotoEditionView1>
+	    	<GridView android:id="@+id/filtergv"
+	    		android:layout_width="fill_parent"    		 
+	    		android:layout_height="320dp"
+	    		android:background="#e6666666"
+	    		style="@style/GridView4"
+	    		android:layout_gravity="bottom"
+	    		android:visibility="gone">
+	    	</GridView>
+	    	<GridView android:id="@+id/framegv"
+	    		android:layout_width="fill_parent"    		 
+	    		android:layout_height="320dp"
+	    		android:background="#e6666666"
+	    		style="@style/GridView4"
+	    		android:layout_gravity="bottom"
+	    		android:visibility="gone">
+	    	</GridView>
+			<ImageView android:id="@+id/help1iv" 
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent"
+				android:background="#99000000"
+				android:visibility="gone">
+			</ImageView>
+		</FrameLayout>
+		<LinearLayout android:layout_width="fill_parent" 
+	    	android:layout_height="50dp"
+	    	style="@style/BottomBar">
+	    	<ImageButton android:id="@+id/filterbtn"
+	    		android:layout_width="wrap_content" 
+	    		android:layout_height="fill_parent"
+	    		android:src="@drawable/filterbtn"
+	    		style="@style/BottomBarBtn1">
+	    	</ImageButton>
+	    	<ImageButton android:id="@+id/framebtn"
+	    		android:layout_width="wrap_content" 
+	    		android:layout_height="fill_parent"
+	    		android:src="@drawable/framebtn"
+		    	style="@style/BottomBarBtn1">
+	    	</ImageButton>
+	    	<ImageButton android:id="@+id/help1btn"
+	    		android:layout_width="wrap_content" 
+	    		android:layout_height="fill_parent"    	
+	    		android:src="@drawable/help1btn"
+		    	style="@style/BottomBarBtn1">
+	    	</ImageButton>
+	    </LinearLayout>
+	</LinearLayout>
+
+	<!-- The second view -->
+	<LinearLayout android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    >
+		<RelativeLayout android:layout_width="fill_parent" 
+	    	android:layout_height="40dp"
+	    	style="@style/TopBar">
+	    	<Button android:id="@+id/back2btn"
+	    		android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+		    	android:text="上一步"
+		    	android:layout_alignParentLeft="true"
+		    	style="@style/TopBarBtn">
+	    	</Button>
+	    	<Button android:id="@+id/next2btn"
+	    		android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+		    	android:text="完成"
+		    	android:layout_alignParentRight="true"
+		    	style="@style/TopBarBtn">
+	    	</Button>
+	    </RelativeLayout>
+	    <FrameLayout android:layout_height="wrap_content" 
+	    	android:layout_width="fill_parent"
+	    	android:layout_weight="1"
+	    	android:background="@drawable/bg"
+	    	android:layout_gravity="center">
+	    	<digu.PhotoEdition.PhotoEditionView2 android:id="@+id/pev2"
+	    		android:layout_width="wrap_content" 
+	    		android:layout_height="wrap_content"
+	    		android:layout_gravity="center">
+	    	</digu.PhotoEdition.PhotoEditionView2>
+	    	<LinearLayout android:id="@+id/pendantbar"
+	    		android:layout_height="40dp" 
+	    		android:layout_width="fill_parent"
+	    		style="@style/ControlBar"
+	    		android:layout_gravity="bottom"
+	    		android:visibility="gone">
+	    		<ImageView android:id="@+id/pendantiv" 
+					android:layout_width="40dp" 
+					android:layout_height="40dp"
+					android:background="#99666666"
+					android:scaleType="fitCenter">
+				</ImageView>
+				<ImageView android:id="@+id/pendantdispiv1" 
+					android:layout_width="40dp" 
+					android:layout_height="40dp"
+					android:scaleType="fitCenter">
+				</ImageView>
+				<SeekBar android:id="@+id/pendantseekbar"
+			    	android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			    	android:layout_weight="1"
+			    	android:minHeight="12dp"
+			    	android:maxHeight="12dp"
+			    	android:paddingLeft="12dp"
+			    	android:paddingRight="12dp"
+			    	android:max="100"
+			    	android:progress="50"
+			    	android:thumb="@drawable/seekbar_btn">
+				</SeekBar>
+				<ImageView android:id="@+id/pendantdispiv2" 
+					android:layout_width="40dp" 
+					android:layout_height="40dp"
+					android:scaleType="fitCenter">
+				</ImageView>
+				<ImageButton android:id="@+id/pendantswitchbtn" 
+					android:layout_width="40dp" 
+					android:layout_height="40dp"
+					style="@style/ControlBarBtn">
+				</ImageButton>
+	    	</LinearLayout>
+	    	<LinearLayout android:id="@+id/magicwandbar"
+	    		android:layout_height="40dp" 
+	    		android:layout_width="fill_parent"
+	    		style="@style/ControlBar"
+	    		android:layout_gravity="bottom"
+	    		android:visibility="gone">
+	    		<ImageView android:id="@+id/magicwandiv" 
+					android:layout_width="40dp" 
+					android:layout_height="40dp"
+					android:background="#99666666"
+					android:scaleType="fitCenter">
+				</ImageView>
+				<ImageButton android:id="@+id/magicwandswitchbtn" 
+					android:layout_width="40dp" 
+					android:layout_height="40dp"
+					style="@style/ControlBarBtn">
+				</ImageButton>
+				<ImageView 
+					android:layout_width="40dp" 
+					android:layout_height="40dp"
+					android:src="@drawable/small_img"
+					android:scaleType="fitCenter">
+				</ImageView>
+				<SeekBar android:id="@+id/magicwandseekbar"
+			    	android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			    	android:layout_weight="1"
+			    	android:minHeight="12dp"
+			    	android:maxHeight="12dp"
+			    	android:paddingLeft="12dp"
+			    	android:paddingRight="12dp"
+			    	android:max="100"
+			    	android:progress="50"
+			    	android:thumb="@drawable/seekbar_btn">
+				</SeekBar>
+				<ImageView 
+					android:layout_width="40dp" 
+					android:layout_height="40dp"
+					android:src="@drawable/big_img"
+					android:scaleType="fitCenter">
+				</ImageView>
+				<ImageButton android:id="@+id/magicwanddeletebtn" 
+					android:layout_width="40dp" 
+					android:layout_height="40dp"
+					android:src="@drawable/delete_btn"
+					style="@style/ControlBarBtn">
+				</ImageButton>
+	    	</LinearLayout>
+	    	<LinearLayout android:id="@+id/decoratell"
+	    		android:orientation="vertical"
+	    		android:layout_width="fill_parent"
+	    		android:layout_height="320dp"
+	    		android:persistentDrawingCache="animation"
+	    		android:layout_gravity="bottom"
+	    		android:visibility="gone">
+	    		<LinearLayout android:orientation="horizontal"
+	    			android:layout_height="wrap_content" 
+	    			android:layout_width="fill_parent">
+	    			<Button android:id="@+id/pendantbtn"
+	    				android:text="挂件"
+			    		android:layout_height="wrap_content" 
+			    		android:layout_width="wrap_content"
+			    		style="@style/TabBtn">
+			    	</Button>
+			    	<Button android:id="@+id/magicwandbtn"
+			    		android:text="魔术棒" 
+			    		android:layout_height="wrap_content" 
+			    		android:layout_width="wrap_content"
+			    		style="@style/TabBtn">
+			    	</Button>
+			    </LinearLayout>
+			    <ViewFlipper android:id="@+id/tabflipper" 
+			    	android:layout_height="fill_parent"
+			    	android:layout_width="fill_parent"
+			    	style="@style/TabFlipper">
+			    	<GridView android:id="@+id/pendantgv"
+			    		android:layout_width="fill_parent"    		 
+			    		android:layout_height="fill_parent"
+			    		android:background="#00000000"
+			    		style="@style/GridView5">
+			    	</GridView>
+			    	<GridView android:id="@+id/magicwandgv"
+			    		android:layout_width="fill_parent"    		 
+			    		android:layout_height="fill_parent"
+			    		android:background="#00000000"
+			    		style="@style/GridView5">
+			    	</GridView>
+		    	</ViewFlipper>
+	    	</LinearLayout>
+			<ImageView android:id="@+id/help2iv" 
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent"
+				android:background="#99000000"
+				android:visibility="gone">
+			</ImageView>
+		</FrameLayout>
+		<LinearLayout android:layout_width="fill_parent" 
+	    	android:layout_height="50dp"
+	    	style="@style/BottomBar">
+	    	<ImageButton android:id="@+id/decoratebtn"
+	    		android:layout_width="wrap_content" 
+	    		android:layout_height="fill_parent"
+	    		android:src="@drawable/decoratebtn"
+		    	style="@style/BottomBarBtn2">
+	    	</ImageButton>
+	    	<ImageButton android:id="@+id/undobtn"
+	    		android:layout_width="wrap_content" 
+	    		android:layout_height="fill_parent"
+	    		android:src="@drawable/undobtn"
+		    	style="@style/BottomBarBtn2">
+	    	</ImageButton>
+	    	<ImageButton android:id="@+id/clearbtn"
+	    		android:layout_width="wrap_content" 
+	    		android:layout_height="fill_parent"
+	    		android:src="@drawable/clearbtn"
+		    	style="@style/BottomBarBtn2">
+	    	</ImageButton>
+	    	<ImageButton android:id="@+id/redobtn"
+	    		android:layout_width="wrap_content" 
+	    		android:layout_height="fill_parent"
+	    		android:src="@drawable/redobtn"
+		    	style="@style/BottomBarBtn2">
+	    	</ImageButton>
+	    	<ImageButton android:id="@+id/help2btn"
+	    		android:layout_width="wrap_content" 
+	    		android:layout_height="fill_parent"
+	    		android:src="@drawable/help2btn"	    	
+		    	style="@style/BottomBarBtn2">
+	    	</ImageButton>
+	    </LinearLayout>
+	</LinearLayout>
+</ViewFlipper>
